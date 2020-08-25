@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
-from habilidades import Habilidades
+from CalcValorFreteFiscal import Habilidades
 import json
 
 app = Flask(__name__)
