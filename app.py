@@ -1,7 +1,10 @@
-from flask import Flask, request
-from flask_restful import Resource, Api
-import CalcValorFreteFiscal, CalcValorPedagio, CalcValorMerc, CalcAdiantamentoEmpresa
-import json
+from flask import Flask
+from flask_restful import Api
+
+from CalcAdiantamentoEmpresa import CalcAdiantamentoEmpresa
+from CalcValorFreteFiscal import CalcValorFreteFiscal
+from CalcValorMerc import CalcValorMerc
+from CalcValorPedagio import CalcValorPedagio
 
 app = Flask(__name__)
 api = Api(app)
